@@ -52,7 +52,7 @@ namespace Homework1
     }
 
 }
-internal class Vote
+public class Vote
 {
     public string Number { get; set; }//a
     public string AllPopulation { get; set; }//b
@@ -82,6 +82,19 @@ internal class Vote
     public static Vote CreateFormCSV(string a, string b, string c, string d, string e, string f, string g, string h, string i, string j)
     {
         return new Vote(a, b, c, d, e, f, g, h, i, j);
+    }
+    public static List<Vote> readData()
+    {
+        var reader = new StreamReader(File.OpenRead("referendum_result.csv"));
+        List<Vote> voteList = new List<Vote>();
+        while (!reader.EndOfStream)
+        {
+            var line = reader.ReadLine();
+            var values = line.Split(",");
+            Vote vote = Vote.CreateFormCSV(values[0], values[1], values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9]);
+            voteList.Add(vote);
+        }
+        return voteList;
     }
 
 }

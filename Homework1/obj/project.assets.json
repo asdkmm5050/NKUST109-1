@@ -48,11 +48,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\C#\\Homework1\\Homework1\\Homework1.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\C#\\NKUST109-1\\Homework1\\Homework1.csproj",
       "projectName": "Homework1",
-      "projectPath": "C:\\Users\\user\\Desktop\\C#\\Homework1\\Homework1\\Homework1.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\C#\\NKUST109-1\\Homework1\\Homework1.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\C#\\Homework1\\Homework1\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\C#\\NKUST109-1\\Homework1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
