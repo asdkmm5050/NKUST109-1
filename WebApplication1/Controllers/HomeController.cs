@@ -20,9 +20,9 @@ namespace WebApplication1.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            List<Vote> voteList = Vote.readData();
+            return View(voteList);
         }
-
         public IActionResult Privacy()
         {
             return View();
